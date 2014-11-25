@@ -1,0 +1,20 @@
+#mainContainer {
+    width: 600px;
+    height: 600px;
+    background: black;
+}
+.box {
+    position: relative;
+    background: white;
+    color: black;
+    font-size: 80px;
+}
+.ox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box[winner="1"] {
+    color: blue;
+}
