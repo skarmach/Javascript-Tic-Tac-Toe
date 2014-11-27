@@ -61,6 +61,7 @@ function Box (r, c) {
   b.className = "box";
   //"no" attribute is used to highlight winning combo
   b.setAttribute("no", (r - 1) * COLS + c - 1);
+  b.setAttribute("winner", "0");
   b.style.width = boxWidth + "px";
   b.style.height = boxHeight + "px";
   b.style.position = "absolute";
@@ -113,6 +114,7 @@ function startGame() {
       mainContainer.appendChild((new Box(r, c)).getElement());
     }
   }
+  mainContainer.style.pointerEvents = "auto";
 }
 
 // add click handler to the 'start' button
